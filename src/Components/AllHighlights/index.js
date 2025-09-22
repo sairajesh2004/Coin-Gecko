@@ -9,7 +9,7 @@ import SmallLengthCoinTopGainers from "../SmallLengthCoinTopGainers"
 import SmallLengthCoinTopLosers from "../SmallLengthCoinTopLosers"
 import SmallLengthCoinPrice from "../SmallLengthCoinPrice"
 import SmallLengthCoinVolume from "../SmallLengthCoinVolume"
-import { TailSpin } from "react-loader-spinner"
+import { TailSpin } from "react-spinners"
 import './index.css'
 
 class AllHighlights extends Component{

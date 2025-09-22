@@ -6,7 +6,7 @@ import { IoIosRocket } from "react-icons/io"
 import SmallLengthCoinTrending from "../SmallLengthCoinTrending"
 import SmallLengthCoinTopGainers from "../SmallLengthCoinTopGainers"
 import FullLengthCoin from "../FullLengthCoin"
-import { TailSpin } from "react-loader-spinner"
+import { TailSpin } from "react-spinners"
 import './index.css'
 
 class AllCoins extends Component{
