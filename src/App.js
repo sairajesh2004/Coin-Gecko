@@ -9,11 +9,10 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<AllCoins/>}/>
         <Route exact path="/allhighlights" element={<AllHighlights/>}/>
-        
-        <Route path="*" element={<Navigate to="/not-found" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   )
 
 
-export default App;
+export default App
