@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🚀 Crypto Dashboard (CoinGecko Assignment)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **React.js cryptocurrency dashboard** built as a company assignment.  
+It fetches real-time data from the **CoinGecko API** and displays coins, market highlights, trending coins, top gainers, losers, and more.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
+- 📊 **All Coins View** – Top 100 coins with price, 1h/24h/7d change, volume, and market cap.  
+- 🔥 **Trending Coins** – Top 3 trending coins from CoinGecko.  
+- 🚀 **Top Gainers** – Top 3 coins with the highest 24h gain.  
+- 📉 **Top Losers** – (In Highlights) Top 7 losers in 24h.  
+- 🆕 **New Coins** – Recently added coins.  
+- 📈 **ATH/Price Change** – Change since All Time High.  
+- 💰 **High Volumes** – Coins with highest trading volumes.  
+- ⚡ **Dynamic Routing** – Switch between `All Coins` and `Highlights`.  
+- ✅ Error Handling – Displays a failure image + retry button when API fails.  
+- ⏳ Loader – Green spinner shown while fetching API data.  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+- **React.js** (Class Components + Router v6)
+- **CoinGecko API**
+- **React Router DOM**
+- **React Icons**
+- **React Spinners** (green `ClipLoader` for loading state)
+- **CSS3** (custom styling)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
+src/
+├── Components/
+│ ├── AllCoins/
+│ ├── AllHighlights/
+│ ├── Header/
+│ ├── SmallLengthCoinTrending/
+│ ├── SmallLengthCoinTopGainers/
+│ ├── SmallLengthCoinTopLosers/
+│ ├── SmallLengthCoinPrice/
+│ ├── SmallLengthCoinVolume/
+│ └── FullLengthCoin/
+├── App.js
+└── index.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository:
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## To install dependencies
+```bash
+npm install
+```
 
-### `npm run eject`
+## To start development server
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##🚀 Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project is deployed on Vercel.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To deploy manually:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Push your repo to GitHub.
+2. Connect the repo on Vercel
+3. Set Build Command: npm run build
+4. Set Output Directory: build
+5. Deploy 🚀
 
-## Learn More
+##APIs Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Global Data:
+https://api.coingecko.com/api/v3/global
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Trending Coins:
+https://api.coingecko.com/api/v3/search/trending
 
-### Code Splitting
+Market Data (Top 100):
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100&price_change_percentage=1h,24h,7d
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Top Gainers/Losers:
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=price_change_percentage_24h_desc
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=price_change_percentage_24h_asc
 
-### Analyzing the Bundle Size
+New Coins / High Volume:
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_asc&per_page=10&page=1
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=10&page=1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
