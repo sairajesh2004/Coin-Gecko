@@ -6,7 +6,7 @@ import { IoIosRocket } from "react-icons/io"
 import SmallLengthCoinTrending from "../SmallLengthCoinTrending"
 import SmallLengthCoinTopGainers from "../SmallLengthCoinTopGainers"
 import FullLengthCoin from "../FullLengthCoin"
-import { TailSpin } from "react-spinners"
+import ClipLoader from "react-spinners/ClipLoader";
 import './index.css'
 
 class AllCoins extends Component{
@@ -228,7 +228,7 @@ class AllCoins extends Component{
         else{
             return(
                 <div className="forloader">
-                    <TailSpin
+                    <ClipLoader
                         height="80"
                         width="80"
                         color="#4CAF50"  // nice green color

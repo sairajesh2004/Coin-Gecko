@@ -9,7 +9,8 @@ import SmallLengthCoinTopGainers from "../SmallLengthCoinTopGainers"
 import SmallLengthCoinTopLosers from "../SmallLengthCoinTopLosers"
 import SmallLengthCoinPrice from "../SmallLengthCoinPrice"
 import SmallLengthCoinVolume from "../SmallLengthCoinVolume"
-import { TailSpin } from "react-spinners"
+import ClipLoader from "react-spinners/ClipLoader";
+
 import './index.css'
 
 class AllHighlights extends Component{
@@ -354,7 +355,7 @@ class AllHighlights extends Component{
         else{
             return(
                 <div className="forloader">
-                    <TailSpin
+                    <ClipLoader
                             height="80"
                             width="80"
                             color="#4CAF50"  // nice green color
