@@ -1,0 +1,113 @@
+.Headeroutercont{
+    width: 100vw;
+    height: 7vh;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Headeruppercont{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+}
+
+.Detailscont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 700px;
+    list-style-type: none;
+}
+
+.Eachdetailshead{
+    color: #808080;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.Highlightedcontent{
+    color: black;
+    font-size: 18px;
+}
+
+.Buttoncont{
+    display: flex;
+    width: 200px;
+    padding: 15px;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.Forheaderbutton{
+    padding: 8px;
+    height: 30px;
+    border: 2px solid gray;
+    background-color: white;
+    margin-right: 8px;
+    border-radius: 13px;
+}
+
+.Forheaderbuttonad{
+    padding: 8px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid gray;
+    background-color: white;
+    margin-right: 8px;
+    border-radius: 13px;
+}
+
+.Hrtag{
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Headerlowercont{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+
+.logoname{
+    width: 200px;
+}
+
+.Imagecont{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.Geckologo{
+    width: 60px;
+    height: 60px;
+    margin-right: 13px;
+}
+
+.basicdetails{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    justify-content: space-evenly;
+    color: gray;
+}
+
+.Headersearch{
+    width: 130px;
+    background-color: lightgray;
+    color: gray;
+    padding: 13px;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 25px;
+}
