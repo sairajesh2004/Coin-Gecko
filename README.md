@@ -88,11 +88,13 @@ https://api.coingecko.com/api/v3/search/trending
 Market Data (Top 100):
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100&price_change_percentage=1h,24h,7d
 
-Top Gainers/Losers:
+Top Gainers and Losers:
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=price_change_percentage_24h_desc
+and
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=price_change_percentage_24h_asc
 
-New Coins / High Volume:
+New Coins and High Volume:
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_asc&per_page=10&page=1
+and
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=volume_desc&per_page=10&page=1
 
